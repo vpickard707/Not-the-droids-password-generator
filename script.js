@@ -3,6 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  var inputLength = prompt("Choose your password length - between 8 and 128 characters.")
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -19,7 +20,7 @@ var otherChar = { "!", "@", "#", "$", "%", "^", "&","*" }}
 
 var number = [0,1,2,3,4,5,6,7,8,9]
 
-var inputLength = prompt("How long do you want your password to be? Use between 8 and 128 characters.")
+
   
 //if inputLength is number 
 //then var passLength = parseInt(inputLength)
@@ -28,7 +29,7 @@ var inputLength = prompt("How long do you want your password to be? Use between 
   var passLength = parseInt()
   var useUpper = confirm('Should contain uppercase?')
   var useSpec = confirm('Should contain special characters')
-  var useNumber = confirm('Shouldcontain numbers?')
+  var useNumber = confirm('Should contain numbers?')
 
   genPass(passLength, useUpper, useSpec, useNumber)
 // Add event listener to generate button
